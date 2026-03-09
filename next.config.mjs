@@ -8,7 +8,10 @@ const withPWA = withPWAInit({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactCompiler: true,
-  // Kita hapus bagian experimental turbopack karena menyebabkan error invalid
+  // Memastikan Webpack diterima tanpa error Turbopack
+  webpack: (config) => {
+    return config
+  },
 }
 
 export default withPWA(nextConfig)
