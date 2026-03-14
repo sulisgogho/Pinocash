@@ -18,6 +18,10 @@ export const metadata = {
   themeColor: '#172554', // Tambahkan baris ini
 }
 
+export const viewport = {
+  themeColor: '#172554',
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
